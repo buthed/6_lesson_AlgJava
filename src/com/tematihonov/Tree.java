@@ -1,17 +1,13 @@
 package com.tematihonov;
-	// Task 6.1
-    // Приведите пример использования древовидной структуры:
-    // Все животные красной книги. Вся книга делится на царства: Животные, бактерии, Растения и т.д. В свою очередь Царство животные делится на: рыбы, птицы, насекомые и т.д.
 
-    // Task 6.2
-    // Реализуйте класс узла дерева и базовый шаблон дерева с базовыми методами.
+
+
     public class Tree {
 
         private Node root;
 
 
-        // Task 6.3
-        // Реализуйте методы поиска и вставки узла в дерево.
+
         public void insert(RedBook redBook) {
             Node node = new Node();
             node.redBook = redBook;
@@ -54,9 +50,7 @@ package com.tematihonov;
         }
 
 
-        // Task 6.4
-        // Реализуйте базовые методы обхода дерева и метода дисплей.
-        // Реализуйте поиск максимума и минимума.
+
         private void preOrder(Node rootNode) {
             if (rootNode != null) {
                 rootNode.display();
@@ -101,8 +95,7 @@ package com.tematihonov;
             return last;
         }
 
-        // Task 6.5
-        // Реализуйте метод удаления узла и выполните оценку времени базовых методов дерева с помощью System.nanoTime().
+
         public boolean delete(int id) {
             Node current = root;
             Node parent = root;
@@ -182,7 +175,7 @@ package com.tematihonov;
             Node current = root;
             System.out.println("Симметричный");
             inOrder(root);
-            System.out.println("ПРямой");
+            System.out.println("Прямой");
             preOrder(root);
             System.out.println("Обратный");
             postOrder(current);

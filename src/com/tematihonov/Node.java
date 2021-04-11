@@ -32,6 +32,6 @@ class Node {
     }
 
     public void display() {
-        System.out.println("id: " + redBook.id + "Имя:" + redBook.name + " значение: " + redBook.value);
+        System.out.println("id: " + redBook.id + " Имя: " + redBook.name + " Значение: " + redBook.value);
     }
 }
